@@ -1,0 +1,353 @@
+:root {
+    --bs-font-sans-serif: 'Montserrat', sans-serif;
+    --primary-color: #d15d1c;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    background-color: #b14e19;
+    border-color: #b14e19;
+}
+.carousel-item {
+    margin-top: 100px;
+    transition: transform 1s ease-in-out !important;
+    height: 700px; /* Adjust height for jumbo landscape effect */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .static-caption {
+        font-family: var(--bs-font-Montserrat);
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        text-align: left;
+        color: white;
+        width: 40%;
+        z-index: 10; 
+}
+
+
+/* Make sure the container fills the width */
+#headerCarousel {
+    width: 100%;
+}
+
+body {
+    font-family: var(--bs-font-Montserrat);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: var(--bs-font-Montserrat);
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: var(--primary-color);
+}
+
+h3 {
+    color:#d15d1c
+}
+
+
+.nav-links {
+    font-family: var(--bs-font-sans-serif);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.about, .projects, .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3,
+.overlay p,
+.overlay a {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+
+.project-item:hover .overlay h3,
+.project-item:hover .overlay p,
+.project-item:hover .overlay a {
+    transform: translateY(0);
+}
+
+/*ABOUT STYLES*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.section-title-skills {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.section-title-cert {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+/* Skills Progress Bar */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar-color {
+    background-color: #d15d1c;
+}
+
+/* Certifications */
+.certification-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.certification-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.educ {
+    color:black;
+}
+
+
+/*PROJECTS STYLES*/
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.project-image {
+    width: 85%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-content {
+    max-width: 800px;
+}
+
+.custom-btn {
+    background-color: #d15d1c !important;
+    border: 2px solid #d15d1c !important;
+    color: white !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: white !important;
+    color: #d15d1c !important;
+    border: 2px solid #d15d1c !important;
+}
+
+
+.section-title-project {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/*CONTACT STYLES*/
+
+/* Contact Section Styling */
+.sub-image {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    width: 800px;
+    height: 800px;
+    z-index: -1; /* Moves the image behind the content */
+}
+
+#contact {
+    position: relative; /* Ensures the section is the reference for absolute positioning */
+    z-index: 1; /* Makes sure content stays above the background image */
+    margin-bottom: 100px;
+}
+
+
+/* Contact Info (Left Side) */
+.email-link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.email-link i {
+    margin-right: 8px;
+    color: #007bff;
+    font-size: 22px;
+}
+.email-link:hover {
+    color: #0056b3;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Contact Form (Right Side) */
+.contact-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: url('images/WDFOLIO_LOGO.png') no-repeat center center/cover;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Footer Styling */
+.footer-container {
+    background-color: #212529; /* Dark background, same as header */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Name Styling */
+.footer-container h2 {
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff; /* Border matches the header */
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #d15d1c; /* Hover effect to match branding */
+    color: white;
+}
