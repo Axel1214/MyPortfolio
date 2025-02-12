@@ -3,6 +3,11 @@
     --primary-color: #d15d1c;
 }
 
+#about {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
 .navbar {
     background-color: var(--primary-color) !important;
 }
@@ -173,7 +178,7 @@ body {
 .section-title-cert {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 600;
 }
 
@@ -187,22 +192,45 @@ body {
     background-color: #d15d1c;
 }
 
-/* Certifications */
+/* Certification Section Styling */
+#certifications .d-flex {
+    flex-wrap: nowrap; /* Ensures all items are in one line */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+/* Individual Certification Styling */
 .certification-item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    min-width: 280px; /* Ensures consistent size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .certification-item img {
     width: 50px;
-    height: 50px;
+    height: auto;
 }
 
-.educ {
-    color:black;
+.certification-item h6 {
+    margin: 0;
+    font-size: 16px;
 }
+
+.certification-item a {
+    font-size: 14px;
+    color: #d15d1c;
+    text-decoration: none;
+}
+
+.certification-item a:hover {
+    text-decoration: underline;
+}
+
 
 
 /*PROJECTS STYLES*/
@@ -211,19 +239,31 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px 0;
+}
+.project-content {
+    margin-top: -370px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.carousel-inner-al {
+    width: 600px;
+    height: 700px;
 }
 
 .project-image {
-    width: 85%;
-    max-width: 900px;
     border-radius: 10px;
-    margin-bottom: 15px;
+    max-height: 300px;
+    object-fit: cover;
 }
 
-.project-content {
-    max-width: 800px;
+/* Style for carousel buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
 }
+
 
 .custom-btn {
     background-color: #d15d1c !important;
@@ -246,10 +286,17 @@ body {
 
 .section-title-project {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 10px;
     font-weight: 600;
 }
+
+.lead-text {
+    text-align: center;
+    margin-bottom: -100px;
+    font-size: 18px;
+}
+
 
 /*CONTACT STYLES*/
 
