@@ -241,68 +241,62 @@ body {
 
 
 /*PROJECTS STYLES*/
+/* Projects Section */
+#projects {
+    padding-top: 80px;
+}
+
+.p-content {
+    color: #d15d1c;
+}
+
+.section-title-project {
+    margin-bottom: 20px;
+    margin-top: 120px;
+    color: #d15d1c;
+}
+
+.section-title {
+    font-weight: 600;
+    color: #d15d1c;
+}
+
+.lead-text {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Project Item */
 .project-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.project-content {
-    margin-top: -370px;
-    padding-left: 350px;
-    padding-right: 350px;
-}
-.carousel-inner-al {
-    width: 600px;
-    height: 700px;
-}
 
 .project-image {
-    border-radius: 10px;
-    max-height: 300px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-/* Style for carousel buttons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-
-.custom-btn {
-    background-color: #d15d1c !important;
-    border: 2px solid #d15d1c !important;
-    color: white !important;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background-color: white !important;
-    color: #d15d1c !important;
-    border: 2px solid #d15d1c !important;
-}
-
-
-.section-title-project {
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 10px;
+.project-content h3 {
+    font-size: 24px;
     font-weight: 600;
+    color: #d15d1c;
 }
 
-.lead-text {
-    text-align: center;
-    margin-bottom: -100px;
-    font-size: 18px;
+.project-content p {
+    font-size: 16px;
+    color: #6c757d;
 }
+
 
 
 
@@ -405,4 +399,16 @@ body {
 .custom-btn:hover {
     background-color: #d15d1c; /* Hover effect to match branding */
     color: white;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .profile-image {
+        margin-left: 0; /* Center the image */
+        margin-bottom: 20px; /* Reduce margin */
+        max-width: 200px; /* Adjust size for mobile */
+    }
+    .section-title {
+        margin-left: 0;
+    }
 }
