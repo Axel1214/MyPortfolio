@@ -26,6 +26,7 @@
 
 .navbar {
     background-color: var(--primary-color) !important;
+    
 }
 .btn-primary {
     background-color: var(--primary-color);
@@ -86,6 +87,9 @@ h3 {
     color:#d15d1c
 }
 
+.nav-item {
+    margin-right: 25px; /* Adjust the spacing between items */
+}
 
 .nav-links {
     font-family: var(--bs-font-sans-serif);
@@ -96,7 +100,7 @@ h3 {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-links a {
@@ -244,6 +248,21 @@ body {
     opacity: 0.8;
 }
 
+/* Work Samples Section */
+#work-samples .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#work-samples .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#work-samples .btn {
+    border-radius: 30px;
+}
+
 .section-title {
     text-align: center;
     margin-top: 70px;
@@ -315,6 +334,45 @@ body {
     text-decoration: underline;
 }
 
+.section-title-hard-skills {
+    text-align: center; /* Centers the title */
+    margin-top: 30px; /* Removes top margin */
+    margin-bottom: 40px; /* Adds spacing below the title */
+    font-weight: 600; /* Makes the font bold */
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 5rem 0; /* Adds padding above and below */
+}
+
+
+.lead-text {
+    font-size: 1.1rem;
+    color: #d15d1c;
+    text-align: center;
+}
+
+.testimonial-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%; /* Ensures consistent height for all boxes */
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #000000;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d15d1c;
+}
 
 
 /*PROJECTS STYLES*/
@@ -372,6 +430,29 @@ body {
 .project-content p {
     font-size: 16px;
     color: #6c757d;
+}
+
+/* Make the entire project clickable */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for project items */
+.project-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a subtle zoom effect to images on hover */
+.project-image {
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-image {
+    transform: scale(1.05);
 }
 
 
