@@ -1,7 +1,7 @@
 :root {
     --bs-font-sans-serif: 'Montserrat', sans-serif;
-    --primary-color: #d15d1c;
-    --secondary-color: ;
+    --primary-color:  #1C2833;
+    --secondary-color: #dc143c;
     --dark-color: #2D2D2D;
     --white-color: #FFFFFF;
     --grey-color: #777777;
@@ -80,7 +80,7 @@ header {
 }
 
 p {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h3 {
@@ -92,7 +92,7 @@ h3 {
 }
 
 .nav-links {
-    font-family: var(--bs-font-sans-serif);
+    font-family: var(--bs-font-Montserrat);
     list-style: none;
     padding: 0;
     display: flex;
@@ -112,6 +112,11 @@ h3 {
     text-align: center;
     padding: 50px;
     background: #f4f4f4;
+}
+
+.abt-home {
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .about, .projects, .contact {
@@ -292,7 +297,7 @@ body {
 }
 
 .progress-bar-color {
-    background-color: #d15d1c;
+    background-color: var(--secondary-color);
 }
 
 /* Certification Section Styling */
@@ -326,7 +331,7 @@ body {
 
 .certification-item a {
     font-size: 14px;
-    color: #d15d1c;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -371,7 +376,7 @@ body {
 .testimonial-author {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #d15d1c;
+    color: var(--secondary-color);
 }
 
 
@@ -388,7 +393,7 @@ body {
 .section-title-project {
     margin-bottom: 20px;
     margin-top: 120px;
-    color: #d15d1c;
+    color: var(--secondary-color);
 }
 
 .section-title {
@@ -424,7 +429,7 @@ body {
 .project-content h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #d15d1c;
+    color: var(--secondary-color);
 }
 
 .project-content p {
@@ -478,6 +483,10 @@ body {
     margin-bottom: 100px;
 }
 
+#contact-me{
+    color: var(--secondary-color);
+}
+
 
 /* Contact Info (Left Side) */
 .email-link {
@@ -490,11 +499,11 @@ body {
 }
 .email-link i {
     margin-right: 8px;
-    color: #007bff;
+    color: var(--secondary-color);
     font-size: 22px;
 }
 .email-link:hover {
-    color: #0056b3;
+    color: var(--secondary-color);
 }
 
 /* Social Media Icons */
@@ -527,7 +536,7 @@ body {
 
 /* Footer Styling */
 .footer-container {
-    background-color: #212529; /* Dark background, same as header */
+    background-color: var(--primary-color); /* Dark background, same as header */
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -555,7 +564,22 @@ body {
 }
 
 .custom-btn:hover {
-    background-color: #d15d1c; /* Hover effect to match branding */
+    background-color: var(--secondary-color); /* Hover effect to match branding */
+    color: white;
+}
+
+#send-btn{
+    border: 2px solid #000000; /* Border matches the header */
+    border-radius: 30px;
+    color: #000000;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#send-btn:hover {
+    background-color: var(--secondary-color); /* Hover effect to match branding */
     color: white;
 }
 
