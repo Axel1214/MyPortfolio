@@ -37,7 +37,7 @@
     <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Static Text (This stays in place) -->
         <div class="static-caption">
-            <h1>Brent Axel Francisco</h1>
+            <h1 class="display-5 fw-bold brent">Brent Axel Francisco</h1>
             <h3>Front-End Developer</h3>
             <p>As an aspiring Front-End Developer with a passion for and making a seamless and interactive digital experience.</p>
         </div>
@@ -50,7 +50,7 @@
     
     <section id="about" class="py-5">
         <div class="container text-center">
-            <h2>About Me</h2>
+            <h2 class="about-me">About Me</h2>
             <p class="abt-home">As an aspiring Front-End Developer and UI/UX Designer, I am passionate about crafting seamless and interactive digital experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring creativity and functionality together to build engaging web solutions.</p>
         </div>
     </section>
@@ -58,59 +58,81 @@
 
 <!-- Featured Projects Section -->
 <section id="projects" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="mb-5">Brent's Works</h2>
+    <div class="container">
+        <h2 class="text-center mb-5" id="works">Brent's Works</h2>
         
-        <div class="project">
-            <div class="project-item position-relative">
-                <img src="images/project1.png" class="img-fluid w-100 rounded" alt="Website for Automotive Shop">
-                <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="text-white">Website for Automotive Shop</h3>
-                    <p class="text-white">Developed a responsive website using HTML, CSS, and JavaScript.</p>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/project1.png" class="card-img-top" alt="Website for Automotive Shop">
+                    <div class="card-body">
+                        <h5 class="card-title">Website for Automotive Shop</h5>
+                        <p class="card-text">
+                            Developed a responsive website using HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project mt-4">
-            <div class="project-item position-relative">
-                <img src="images/project2.png" class="img-fluid w-100 rounded" alt="Group Database Project">
-                <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="text-white">Group Database Project</h3>
-                    <p class="text-white">Built a MongoDB and Firebase database for customer and inventory data.</p>
+            <!-- Project 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/project2.png" class="card-img-top" alt="Group Database Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Group Database Project</h5>
+                        <p class="card-text">
+                            Built a MongoDB and Firebase database for customer and inventory data.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project mt-4">
-            <div class="project-item position-relative">
-                <img src="images/par25.png" class="img-fluid w-100 rounded" alt="Par 25 - PHP Website">
-                <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="text-white">PHP Website</h3>
-                    <p class="text-white text-center">
-                        Developed a responsive PHP-based website with a functional database using HTML, CSS, JavaScript, PHP, and SQL.  
-                    </p>
+            <!-- Project 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/par25.png" class="card-img-top" alt="Par 25 - PHP Website">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP Website</h5>
+                        <p class="card-text">
+                            Developed a responsive PHP-based website with a functional database using HTML, CSS, JavaScript, PHP, and SQL.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Project 4: Pawtect -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/project-about.png" class="card-img-top" alt="Pawtect Project Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title">Pawtect Web Application</h5>
+                        <p class="card-text">
+                            A web-based advocacy platform that streamlines pet adoption, volunteer signups, donations, and rescue reports for the community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        
     </div>
 </section>
+
 </section>
 
 <footer class="footer-container text-center text-light py-5">
     <div class="container">
-        <img src="images/WDFOLIO_LOGO.png" alt="Brent Axel Francisco Logo" class="mb-3" height="80">
+        <img src="images/WDFOLIO_LOGO_2.png" alt="Brent Axel Francisco Logo" class="mb-3" height="80">
 
         <h2 class="fw-bold">Brent Axel Francisco</h2>
-        <p class="lead">Front-End Developer | UI/UX Designer</p>
+        <p class="lead" id="footer">Front-End Developer | UI/UX Designer</p>
 
         <div class="d-flex justify-content-center gap-3 my-3">
             <a href="https://github.com/Axel1214" target="_blank" class="custom-btn">GitHub</a>
             <a href="https://www.linkedin.com/in/brent-axel-francisco-808959369/" target="_blank" class="custom-btn">LinkedIn</a>
         </div>
 
-        <p class="mt-4">&copy; 2025 Brent Axel Francisco. All rights reserved.</p>
+        <p class="mt-4" id="footer">&copy; 2025 Brent Axel Francisco. All rights reserved.</p>
     </div>
 </footer>
 

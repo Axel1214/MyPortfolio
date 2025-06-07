@@ -20,8 +20,10 @@
 }
 
 #about {
-    margin-left: 400px;
-    margin-right: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  max-width: 1200px;
 }
 
 .navbar {
@@ -79,7 +81,15 @@ header {
     text-align: center;
 }
 
-p {
+.brent {
+    color: var(--secondary-color);
+}
+
+.about-me {
+    color: var(--secondary-color);
+}
+
+#works {
     color: var(--secondary-color);
 }
 
@@ -115,8 +125,8 @@ h3 {
 }
 
 .abt-home {
-    padding-left: 7rem;
-    padding-right: 7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .about, .projects, .contact {
@@ -237,7 +247,7 @@ body {
 }
   
   #hero .btn:hover {
-    background-color: var(--dark-color);
+    background-color: var(--secondary-color);
     color: var(--white-color);
 }
   
@@ -259,6 +269,10 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#work-title {
+    color: var(--secondary-color);
+}
+
 #work-samples .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -266,6 +280,11 @@ body {
 
 #work-samples .btn {
     border-radius: 30px;
+}
+
+#work-samples .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .section-title {
@@ -542,6 +561,10 @@ body {
     text-align: center;
 }
 
+#footer {
+    color: var(--secondary-color);
+}
+
 /* Name Styling */
 .footer-container h2 {
     color: white;
@@ -593,4 +616,8 @@ body {
     .section-title {
         margin-left: 0;
     }
+    .abt-home {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
