@@ -89,6 +89,55 @@ header {
     color: var(--secondary-color);
 }
 
+.tech-scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.tech-scroller__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary-color);
+}
+
+.tech-scroller__container {
+  position: relative;
+  width: 100%;
+}
+
+.tech-scroller__track {
+  display: flex;
+  gap: 100px; /* Increased spacing between logos */
+  animation: scroll-left 30s linear infinite;
+  align-items: center;
+}
+
+.tech-scroller__track img {
+  height: 100px; /* Increased logo size */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-scroller__track img:hover {
+  transform: scale(1.25);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 #works {
     color: var(--secondary-color);
 }
